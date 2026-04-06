@@ -4,8 +4,6 @@ const app = express();
 
 // TODO 1: Define server port
 const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
 
 // TODO 4: Import and Apply CORS middleware
 import cors from "cors";
@@ -29,3 +27,4 @@ app.get("/", (req, res) => {
    });
 
 // TODO 7: Start server using app.listen
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
