@@ -9,5 +9,6 @@ const quotes = [
 
 // TODO 3: Create and export getRandomQuote function
 export function getRandomQuote(){
-  return quotes[Math.floor(Math.random() * quotes.length)];
+     const index = getRandomInt(0, quotes.length - 1);
+   return quotes[index];
 }

@@ -8,7 +8,8 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
 // TODO 4: Import and Apply CORS middleware
-
+import cors from "cors";
+app.use(cors());
 
 // TODO 5: Import and apply Morgan middleware
 
