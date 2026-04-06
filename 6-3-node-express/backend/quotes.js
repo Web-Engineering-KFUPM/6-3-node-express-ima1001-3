@@ -1,5 +1,5 @@
 // Import random.js file
-import { getRandomQuote } from "./random.js";
+import { getRandomInt } from "./utils/random.js";
 const quotes = [
   "Code is like humor. When you have to explain it, it’s bad.",
   "Before software can be reusable it first has to be usable.",
@@ -9,6 +9,6 @@ const quotes = [
 
 // TODO 3: Create and export getRandomQuote function
 export function getRandomQuote(){
-     const index = getRandomInt(0, quotes.length - 1);
+     const index = getRandomInt(quotes.length);
    return quotes[index];
 }
