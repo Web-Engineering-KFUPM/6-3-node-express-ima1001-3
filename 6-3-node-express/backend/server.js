@@ -7,7 +7,7 @@ const PORT = 3000;
 
 // TODO 4: Import and Apply CORS middleware
 import cors from "cors";
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:5173'}));
 
 // TODO 5: Import and apply Morgan middleware
 import morgan from "morgan";
@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 
 // TODO 6.2: Create "/api/quote" route
-   app.get("/api/quote", (req, res) => {
+   app.get("/api/quote/:id", (req, res) => {
      const quote = getRandomQuote();
      res.json({ quote });
    });
